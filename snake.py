@@ -1,6 +1,6 @@
+
 from random import randrange,choice
 from turtle import *
-
 from freegames import square, vector
 
 colors = ['blue', 'green', 'purple', 'orange', 'pink']
