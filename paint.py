@@ -50,25 +50,44 @@ def circle(start, end):
 
 def rectangle(start, end):
     """Draw rectangle from start to end."""
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    for _ in range(2):
+        h = (end.x - start.x) / 2
+        forward(end.x - start.x)
+        left(90)
+        forward(h)
+        left(90)
+    end_fill()
 
 
 def triangle(start, end):
     """Draw triangle from start to end."""
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    mag = end.x - start.x
+    forward(mag)
+    down()
+    begin_fill()
+    for _ in range(3):
+        forward(mag)
+        left(120)
+    end_fill()
 
 
 def tap(x, y):
     """Store starting point or draw shape."""
-    start = state['start']
+    start = state["start"]
 
     if start is None:
-        state['start'] = vector(x, y)
+        state["start"] = vector(x, y)
     else:
-        shape = state['shape']
+        shape = state["shape"]
         end = vector(x, y)
         shape(start, end)
-        state['start'] = None
+        state["start"] = None
 
 
 def store(key, value):
@@ -76,7 +95,7 @@ def store(key, value):
     state[key] = value
 
 
-state = {'start': None, 'shape': line}
+state = {"start": None, "shape": line}
 setup(420, 420, 370, 0)
 onscreenclick(tap)
 listen()
