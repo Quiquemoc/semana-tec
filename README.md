@@ -25,4 +25,4 @@ Tiro Parabólico: Se modifico de manera que la velocidad de los balones y el pro
 
 ## Actividad 5
 
-Se añadió un contador de taps, detección de fin de juego, centrado de dígitos y uso de símbolos alternativos para mejorar la memoria, además de documentar el código 
+Memoria: Se añadió un contador de taps, detección de fin de juego, centrado de dígitos y uso de símbolos alternativos para mejorar la memoria, además de documentar el código 
