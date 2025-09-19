@@ -49,7 +49,7 @@ def draw():
 
 def move():
     """Move ball and targets."""
-    if randrange(40) == 0:
+    if len(targets) < 30 and randrange(40) == 0:
         y = randrange(-150, 150)
         target = vector(200, y)
         targets.append(target)
@@ -70,10 +70,10 @@ def move():
 
     draw()
 
-    for target in targets:
+    for i, target in enumerate(targets):
         if not inside(target):
-            return
-
+            y = randrange(-150, 150)
+            targets[i] = vector(200, y)
     ontimer(move, 50)
 
 
