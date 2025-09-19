@@ -19,6 +19,10 @@ Paint: La aplicación para dibujar donde se agrego la funcionalidad de hacer tri
 
 Snake: El juego se modifico al hacer que cada vez que se corra el juego, la víbora y la comida deberán tener colores diferentes entre sí, pero al azar, de una serie de 5 diferentes colores, excepto el rojo. Además la comida podrá moverse al azar un paso a la vez y no deberá de salirse de la ventana.
 
+2pojmdpie2wndipne2dfnpie12nfipoe2noifcewoinfoe2ncoine2ofnkoe2nfie2nofn2eoifcne2ionfoie2
+cj2enjofne2onfoe2ncf
+2efn e2nfon
+
 ## Actividad 3
 
 Pacman: Se modificó el programa con la finalidad de hacer que los fantasmas se volvieran más "inteligentes" dentro del juego provocando que sean más rápidos y que el tablero cambie
