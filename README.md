@@ -30,3 +30,6 @@ Tiro Parabólico: Se modifico de manera que la velocidad de los balones y el pro
 ## Actividad 5
 
 Memoria: Se añadió un contador de taps, detección de fin de juego, centrado de dígitos y uso de símbolos alternativos para mejorar la memoria, además de documentar el código 
+
+En la actividad se realizaron modificaciones al código original del juego Memory con el fin de cumplir con los requerimientos establecidos. Se añadió un contador de taps que se actualiza y despliega cada vez que el usuario selecciona una casilla. Se implementó una condición para detectar automáticamente cuando todos los cuadros han sido destapados, mostrando un mensaje de finalización. También se ajustó la posición del texto en cada casilla para que los dígitos (o símbolos) aparezcan centrados visualmente. Finalmente, como innovación, se sustituyeron los dígitos por letras, con el objetivo de proponer un reto distinto que favorezca el ejercicio de la memoria del usuario.
+
