@@ -23,8 +23,10 @@ def inside(head):
     """Return True if head inside boundaries."""
     return -200 < head.x < 190 and -200 < head.y < 190
 
-
+cycles = 0
+CHANGE_IN_CYCLE = 35
 def move():
+    global cycles, CHANGE_IN_CYCLE
     """Move snake forward one segment."""
     head = snake[-1].copy()
     head.move(aim)
@@ -38,6 +40,7 @@ def move():
 
     if head == food:
         print('Snake:', len(snake))
+        cycles = 0
         food.x = randrange(-15, 15) * 10
         food.y = randrange(-15, 15) * 10
     else:
@@ -47,9 +50,14 @@ def move():
 
     for body in snake:
         square(body.x, body.y, 9, 'black')
-
+    
     square(food.x, food.y, 9, 'green')
+    if cycles == CHANGE_IN_CYCLE:
+        cycles = 0
+        food.x = randrange(-15, 15) * 10
+        food.y = randrange(-15, 15) * 10
     update()
+    cycles += 1
     ontimer(move, 100)
 
 
