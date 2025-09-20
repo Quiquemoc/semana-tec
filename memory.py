@@ -4,7 +4,7 @@ from freegames import path
 
 car = path('car.gif')
 # CAMBIO: Usamos letras en lugar de números
-tiles = list('ABCDEFGHIJKLMNOP') * 2
+tiles = list('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdef') * 2
 state = {'mark': None, 'taps': 0}
 hide = [True] * 64  # La cuadrícula sigue siendo 8x8
 found_all = False
