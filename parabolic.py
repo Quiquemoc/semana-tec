@@ -74,7 +74,7 @@ def move():
         if not inside(target):
             y = randrange(-150, 150)
             targets[i] = vector(200, y)
-    ontimer(move, 50)
+    ontimer(move, 25)
 
 
 setup(420, 420, 370, 0)
